@@ -21,14 +21,16 @@ function Project() {
             title: "Parallel Matrix Multiplication",
             href: "https://github.com/atharvagasheTAMU/parallel-matrix-multiplication",
             description:
-                "Parallelized matrix multiplication with a focus on performance and scalability for larger inputs.",
+                "Parallelized matrix multiplication with a focus on performance and scalability for larger inputs using CUDA and OpenMP.",
         },
         {
-            title: "Sparse-View 3DGS Pack",
+            title: "Sparse-View 3DGS",
             href: "https://github.com/Advanced-Vision-and-Learning-Lab/sparse-view-3dgs-pack",
             description:
-                "Sparse-view 3D Gaussian Splatting pipeline with a DWT loss for improved high-frequency detail reconstruction.",
+                "Proposed a novel modethod for Sparse-View Scene Reconstruction using Local and Global Discrete Wavelet-Regularized 3D Gaussian Splatting.",
         },
+
+        
         {
             title: "NEHD_UATR",
             href: "https://github.com/Advanced-Vision-and-Learning-Lab/NEHD_UATR",
@@ -39,14 +41,14 @@ function Project() {
             title: "MEP-SiPLM",
             href: "https://github.com/atharvagasheTAMU/MEP-SiPLM",
             description:
-                "Modeling and simulation work focused on signal processing and pattern learning methods.",
+                "Protein mutation effect prediction using structure information and protein language models, with preprocessing, training, and benchmarking utilities.",
         },
     ];
 
     return (
-        <div className="projects-container" id="projects">
-            <h1>Personal Projects</h1>
-            <div className="projects-grid">
+    <div className="projects-container" id="projects">
+        <h1>Personal Projects</h1>
+        <div className="projects-grid">
                 {projects.map((project) => {
                     const isGithub = project.href.includes("github.com");
                     const LinkIcon = isGithub ? GitHubIcon : OpenInNewIcon;
@@ -68,11 +70,11 @@ function Project() {
                                 <h2>{project.title}</h2>
                             </a>
                             <p>{project.description}</p>
-                        </div>
+            </div>
                     );
                 })}
-            </div>
         </div>
+    </div>
     );
 }
 

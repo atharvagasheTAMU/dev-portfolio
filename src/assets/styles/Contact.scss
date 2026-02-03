@@ -9,15 +9,15 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
+  }
 
 .contact-item {
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 1rem;
-  color: white;
-}
+    color: white;
+  }
 
 .contact-item h2 {
   margin: 0;
@@ -36,7 +36,7 @@
 @media screen and (max-width: 768px) {
   .contact-item {
     font-size: 0.95rem;
-  }
+}
 
   .contact-item h2 {
     font-size: 1.2rem;

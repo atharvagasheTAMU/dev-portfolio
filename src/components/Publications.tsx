@@ -9,6 +9,8 @@ type Publication = {
   status: "Published" | "Preprint";
   linkLabel: string;
   href: string;
+  secondaryLinkLabel?: string;
+  secondaryHref?: string;
 };
 
 const publications: Publication[] = [
@@ -33,6 +35,8 @@ const publications: Publication[] = [
     status: "Preprint",
     linkLabel: "arXiv",
     href: "https://arxiv.org/abs/2601.17185",
+    secondaryLinkLabel: "Project Website",
+    secondaryHref: "https://advanced-vision-and-learning-lab.github.io/LGDWT-GS-website/",
   },
 ];
 
@@ -58,14 +62,26 @@ function Publications() {
               <p className="publication-venue">
                 {pub.venue} · {pub.year}
               </p>
-              <a
-                href={pub.href}
-                target="_blank"
-                rel="noreferrer"
-                className="publication-link"
-              >
-                {pub.linkLabel}
-              </a>
+              <div className="publication-links">
+                <a
+                  href={pub.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="publication-link"
+                >
+                  {pub.linkLabel}
+                </a>
+                {pub.secondaryHref && pub.secondaryLinkLabel ? (
+                  <a
+                    href={pub.secondaryHref}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="publication-link"
+                  >
+                    {pub.secondaryLinkLabel}
+                  </a>
+                ) : null}
+              </div>
             </article>
           ))}
         </div>
@@ -75,4 +91,5 @@ function Publications() {
 }
 
 export default Publications;
+
 

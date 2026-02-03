@@ -76,6 +76,13 @@
   color: #ffffff;
 }
 
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
 @media screen and (max-width: 768px) {
   .publication-card {
     padding: 16px;
@@ -85,4 +92,5 @@
     align-items: flex-start;
   }
 }
+
 
