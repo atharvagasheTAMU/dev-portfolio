@@ -14,10 +14,10 @@ function Timeline() {
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
-            contentArrowStyle={{ borderRight: '7px solid  white' }}
+            contentStyle={{ background: 'rgba(20, 22, 28, 0.92)', color: '#f5f5f5', border: '1px solid rgba(255, 255, 255, 0.08)' }}
+            contentArrowStyle={{ borderRight: '7px solid rgba(20, 22, 28, 0.92)' }}
             date="May 2024 - December 2025"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            iconStyle={{ background: '#5000ca', color: '#f5f5f5' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Machine Learning Engineer</h3>
@@ -29,7 +29,9 @@ function Timeline() {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="June 2022 - July 2023"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            contentStyle={{ background: 'rgba(20, 22, 28, 0.92)', color: '#f5f5f5', border: '1px solid rgba(255, 255, 255, 0.08)' }}
+            contentArrowStyle={{ borderRight: '7px solid rgba(20, 22, 28, 0.92)' }}
+            iconStyle={{ background: '#5000ca', color: '#f5f5f5' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
@@ -41,7 +43,9 @@ function Timeline() {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="October 2020 - June 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            contentStyle={{ background: 'rgba(20, 22, 28, 0.92)', color: '#f5f5f5', border: '1px solid rgba(255, 255, 255, 0.08)' }}
+            contentArrowStyle={{ borderRight: '7px solid rgba(20, 22, 28, 0.92)' }}
+            iconStyle={{ background: '#5000ca', color: '#f5f5f5' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Cloud Services and Software Engineer</h3>

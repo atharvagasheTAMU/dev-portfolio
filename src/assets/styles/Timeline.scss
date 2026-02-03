@@ -3,32 +3,46 @@
     font-family: 'Courier Prime', monospace;
 }
 
-.vertical-timeline p {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element p {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element h3 {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element h4 {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element span {
-    color: rgb(39, 40, 34);
-}
-
 .vertical-timeline-element .vertical-timeline-element-date {
     color: white;
 }
 
 .svg-inline--fa {
     color: white;
+}
+
+.dark-mode {
+    .vertical-timeline p,
+    .vertical-timeline-element p,
+    .vertical-timeline-element h3,
+    .vertical-timeline-element h4,
+    .vertical-timeline-element span {
+        color: #f5f5f5;
+    }
+}
+
+.light-mode {
+    .vertical-timeline p,
+    .vertical-timeline-element p,
+    .vertical-timeline-element h3,
+    .vertical-timeline-element h4,
+    .vertical-timeline-element span {
+        color: rgb(39, 40, 34);
+    }
+
+    .vertical-timeline-element-content {
+        background: #ffffff !important;
+        border: 1px solid rgba(0, 0, 0, 0.08) !important;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12) !important;
+    }
+
+    .vertical-timeline-element-content-arrow {
+        border-right: 7px solid #ffffff !important;
+    }
+
+    .vertical-timeline-element .vertical-timeline-element-date {
+        color: rgb(39, 40, 34) !important;
+    }
 }
 
 @media screen and (max-width: 1170px) {
