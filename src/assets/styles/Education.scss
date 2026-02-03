@@ -1,0 +1,63 @@
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.education-card__header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.education-card h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.education-location {
+  margin: 4px 0 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.education-date {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.education-degree {
+  margin: 12px 0 4px;
+  font-weight: 600;
+}
+
+.education-gpa {
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.education-coursework {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 900px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

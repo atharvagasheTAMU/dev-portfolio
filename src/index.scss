@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.1rem !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace !important;
+  font-size: 1rem !important;
+}
+
+.main-container {
+  position: relative;
+  background-color: #0d1116;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5000ca;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+p, a, h1, h2, h3, h4, h5, label, button {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.navigation-bar {
+  justify-content: space-between;
+  background-color: #0d1116;
+
+  button {
+    font-size: 1.1rem;
+    font-family: "Roboto", sans-serif;
+    text-transform: initial;
+    padding: 6px 10px;
+  }
+
+  svg {
+    cursor: pointer;
+  }
+}
+
+.navigation-bar-responsive {
+  span, p {
+    color: #0d1116;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+.container {
+  margin-top: 64px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-image {
+  width: 100%;
+  height: 450px;
+
+  img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+}
+
+.mobile-menu-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.items-container {
+  padding: 5% 10%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.items-container p {
+  text-align: justify;
+}
+
+.light-mode {
+  background-color: #f8f9fa;
+
+  .navigation-bar {
+    background-color: #f8f9fa;
+  }
+
+  p, a, h1, h2, h3, h4, h5, label, button {
+    color: #0d1116;
+  }
+
+  a:hover {
+    color: #5000ca;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  }
+
+  .navigation-bar svg {
+    color: #0d1116;
+  }
+
+  .about-section {
+    background-image: url("./assets/images/bg-light.png");
+  }
+
+  .about-section .content {
+    .role,
+    .summary,
+    .interests-label,
+    .interest-chip {
+      color: #0d1116;
+    }
+
+    .interests-label {
+      color: rgba(13, 17, 22, 0.7);
+    }
+
+    .interest-chip {
+      background: rgba(0, 0, 0, 0.08);
+      border-color: rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  .skills-container svg {
+    color: #0d1116;
+  }
+
+  .chip {
+    background-color: rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  .vertical-timeline::before {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+    color: gray;
+  }
+
+  .vertical-timeline-element-content-arrow {
+    border-right: 7px solid rgba(0, 0, 0, 0.08) !important;
+  }
+
+  .flex-chips .chip-title {
+    color: #0d1116;
+  }
+
+  .publication-card {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .publication-authors,
+  .publication-venue {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .publication-status.published {
+    color: #3b1a8f;
+    background-color: rgba(80, 0, 202, 0.12);
+    border-color: rgba(80, 0, 202, 0.45);
+  }
+
+  .publication-status.preprint {
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.06);
+    border-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .publication-link {
+    color: #3b1a8f;
+  }
+
+  .publication-link:hover {
+    color: #0d1116;
+  }
+
+  .education-card {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .education-location,
+  .education-gpa,
+  .education-coursework,
+  .education-date {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .contact-item,
+  .contact-item span,
+  .contact-item svg {
+    color: #0d1116;
+  }
+}
+
+@media screen {
+  @media (max-width: 768px) {
+    .items-container {
+      padding: 5% 5%;
+    }
+  }
+}
