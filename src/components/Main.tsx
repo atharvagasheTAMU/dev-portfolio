@@ -74,7 +74,7 @@ function Main() {
             </div>
           </div>
           <p className="summary">
-          I build scalable distributed systems and enjoy turning complex problems into reliable software. I also explore applied AI in computer vision and love automating workflows with agentic AI.          </p>
+          Software Engineer with ~4 years of experience building reliable distributed systems and cloud services. I also work in applied AI/ML, especially computer vision, and I like using agentic AI to automate messy workflows.          </p>
 
         </div>
       </div>
